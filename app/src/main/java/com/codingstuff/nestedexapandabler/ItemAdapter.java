@@ -50,13 +50,10 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         holder.nestedRecyclerView.setLayoutManager(new LinearLayoutManager(holder.itemView.getContext()));
         holder.nestedRecyclerView.setHasFixedSize(true);
         holder.nestedRecyclerView.setAdapter(adapter);
-        holder.linearLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                model.setExpandable(!model.isExpandable());
-                list = model.getNestedList();
-                notifyItemChanged(holder.getAdapterPosition());
-            }
+        holder.linearLayout.setOnClickListener(v -> {
+            model.setExpandable(!model.isExpandable());
+            list = model.getNestedList();
+            notifyItemChanged(holder.getAdapterPosition());
         });
     }
 

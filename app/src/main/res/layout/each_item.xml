@@ -25,13 +25,13 @@
                 android:layout_height="70dp"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="CodingSTUFF"
+                android:text="PLaceholder Title"
                 android:textColor="@color/purple_700"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_bias="0.1"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
